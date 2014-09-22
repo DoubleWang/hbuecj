@@ -80,13 +80,13 @@
                     <div class="column col-5">
                         <div class="body">
                             <div class="title"><span>新</span>闻教育</div>
-                            <ul id="slides">
-                                <li><a href="javascript:;"><img src="img/cycle-01.png" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="img/cycle-01.png" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="img/cycle-01.png" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="img/cycle-01.png" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="img/cycle-01.png" alt=""></a></li>
-                            </ul>
+                            <div id="slides">
+                                <a href="javascript:;"><img src="img/cycle-01.png" alt=""></a>
+                                <a href="javascript:;"><img src="img/cycle-01.png" alt=""></a>
+                                <a href="javascript:;"><img src="img/cycle-01.png" alt=""></a>
+                                <a href="javascript:;"><img src="img/cycle-01.png" alt=""></a>
+                                <a href="javascript:;"><img src="img/cycle-01.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="column col-2">
@@ -256,8 +256,10 @@
                     </li>
                 </ul>
                 <div id="copyright">
-                    <p>版权所有：湖北经济学院-继续教育学院 地址：武汉市江夏区藏龙岛开发区杨桥湖大道8号 邮编：430205</p>
-                    <p>办公地点：湖北经济学院法商大楼一楼右侧 电话：027-81973957</p>
+                    <div class="wrapper">
+                        <p>版权所有：湖北经济学院-继续教育学院 地址：武汉市江夏区藏龙岛开发区杨桥湖大道8号 邮编：430205</p>
+                        <p>办公地点：湖北经济学院法商大楼一楼右侧 电话：027-81973957</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,6 +270,7 @@
                 $('#slides').slidesjs({
                     width: 338,
                     height: 140,
+                    navigation: false,
                     play: {
                         active: true,
                         // [boolean] Generate the play and stop buttons.
