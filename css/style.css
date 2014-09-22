@@ -1,13 +1,16 @@
 /** 全局样式 **/
+
 /** 字体 **/
+
 body, input, textarea, select, button {
     font-family: "Arial", "Microsoft YaHei", "Tahoma";
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 /** 超链接 **/
+
 a {
     color: black;
     text-decoration: none;
@@ -17,23 +20,26 @@ a:hover {
     text-decoration: underline;
 }
 button {
-	border-top-color: #000 !important;
+    border-top-color: #000 !important;
 }
 /** 列表 **/
+
 ul, ol {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 li {
     list-style: none;
 }
 /** icon color **/
+
 .fa {
-	color: #54ba2c;
+    color: #54ba2c;
 }
 /** 浮动 **/
-.clearfix, .row{
-	*zoom:1;
+
+.clearfix, .row {
+    *zoom: 1;
 }
 .clearfix:after, .row:after {
     display: block;
@@ -48,41 +54,74 @@ li {
     float: left;
 }
 .fr {
-	float: right;
+    float: right;
 }
 /** 布局 **/
+
 .container {
-    margin: 0 auto;
     width: 960px;
 }
-.header {} .header .banner img {
+@media (max-width: 767px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+   }
+   .container {
+       width: auto
+  }
+}
+/* For smartphones */
+
+@media (max-width: 480px) {
+    .container {
+        width: auto
+   }
+}
+/* For smaller displays like laptops */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .container {
+        width: 724px
+   }
+}
+/* For larger displays */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+   }
+}
+.container {
+    margin: 0 auto;
+}
+#header, #header .banner img {
     width: 100%;
 }
 .banner {
     margin-bottom: 10px;
 }
-.nav {
+#header .nav {
     height: 30px;
     background-color: #54ba2c;
 }
-.nav, .navl {
+#header .nav, .navl {
     margin: 0;
     list-style: none;
 }
-.nav li {
+#header .nav li {
     display: inline-block;
     line-height: 30px;
     width: 12.5%;
     text-align: center;
 }
-.nav li:hover {
+#header .nav li:hover {
     background-color: #48b21e;
 }
-.nav li a {
+#header .nav li a {
     color: #fff;
     text-decoration: none;
 }
-.navl li a {
+#header .navl li a {
     color: #272727;
     font-size: 12px;
     text-decoration: none;
@@ -91,125 +130,168 @@ li {
     margin: 15px 0;
 }
 #main .breadcrumbs {
-	line-height: 30px;
+    line-height: 30px;
 }
 #search {
-	margin-top: 2px;
+    margin-top: 2px;
 }
 #search-text {
-	border-radius: 5px;
+    border-radius: 5px;
 }
 .search-btn {
-	width: 66px;
-	height: 24px;
-	border: none;
-	background: url(../img/sprite.png) no-repeat -555px -400px;
+    width: 66px;
+    height: 24px;
+    border: none;
+    background: url(../img/sprite.png) no-repeat -555px -400px;
 }
 .search-btn:hover {
-	opacity: 0.6;
+    opacity: 0.6;
 }
-
+#footer .nav {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+#footer .nav li {
+    width: 20%;
+}
+#footer .nav li a {
+    display: block;
+}
+#footer .nav li a:hover {
+    background-color: #54ba2c;
+    color: #fff;
+    text-decoration: none;
+}
+#copyright {
+	text-align: center;
+}
 /** col **/
+
 .row {
-	margin: 0;
-	padding: 0;
-	width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 101%;
+    margin-bottom: 10px;
 }
 .col-1 {
-	float: left;
-	width: 10%;
+    float: left;
+    width: 10%;
 }
 .col-2 {
-	float: left;
-	width: 20%;
+    float: left;
+    width: 20%;
 }
 .col-3 {
-	float: left;
-	width: 30%;
+    float: left;
+    width: 30%;
 }
 .col-33 {
-	float: left;
-	width: 33.33333%;
+    float: left;
+    width: 33.33333%;
 }
 .col-4 {
-	float: left;
-	width: 40%;
+    float: left;
+    width: 40%;
 }
 .col-5 {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 .col-6 {
-	float: left;
-	width: 60%;
+    float: left;
+    width: 60%;
 }
 .col-7 {
-	float: left;
-	width: 70%;
+    float: left;
+    width: 70%;
 }
 .col-8 {
-	float: left;
-	width: 80%;
+    float: left;
+    width: 80%;
 }
 .col-9 {
-	float: left;
-	width: 90%;
+    float: left;
+    width: 90%;
 }
 .col-10 {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 /** column **/
-.row {
-	margin-bottom: 10px;
-}
-.column {
 
-}
-.column .body {
-	border: 1px solid #5dbc2e;
-	/* width: 98%; */
-	margin: 0 10px 0 0;
+.column {} .column .body {
+    border: 1px solid #5dbc2e;
+    /* width: 98%; */
+
+margin: 0 10px 0 0;
 }
 .column .body .title, .column .body ul {
-	padding: 10px 0 8px 10px;
+    padding: 10px 0 8px 10px;
 }
 .column .body .title {
-	font-weight: bold;
-	font-size: 18px;
-	letter-spacing: 3px;
-	background: url(../img/column-header-bg.png) repeat-x;
-	border-bottom: 1px solid #5dbc2e;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    background: url(../img/column-header-bg.png) repeat-x;
+    border-bottom: 1px solid #5dbc2e;
 }
 .column .body .title span {
-	color: #44892c;
-	font-size: 20px;
+    color: #44892c;
+    font-size: 20px;
 }
 .column .body ul {
-	height: 190px;
+    width: 97%;
+    height: 190px;
 }
 .column .body li {
-	width: 98%;
-	font-size: 14px;
-	line-height: 24px;
-	list-style-image: url(../img/list-style-type.png);
-	list-style-type: square;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+    width: 98%;
+    font-size: 14px;
+    line-height: 24px;
+    list-style-image: url(../img/list-style-type.png);
+    list-style-type: square;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .column .body li img {
-	width: 100%;
+    width: 100%;
 }
 .sub-banner img {
-	width: 99%;
+    width: 99%;
 }
 /** ico **/
+
 .ico {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }
 .ico-location {
-	background: url(../img/sprite.png) no-repeat -11px -11px;
+    background: url(../img/sprite.png) no-repeat -11px -11px;
+}
+#slides {
+    height: 180px;
+    margin-bottom: 10px;
+    display: none;
+}
+.slidesjs-pagination .active {
+    color: red;
+}
+/** page **/
+
+.post {
+    width: 98%;
+    margin: 0 1%;
+    line-height: 24px;
+}
+.post h2 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #999;
+}
+.post p {
+    margin-bottom: 15px;
+    text-indent: 2em;
 }
